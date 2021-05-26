@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import axios from 'axios'
 
-async function foo() {
-  return 7
-}
+const StyledApp = styled.div`
+  background-color: red;
+`
 
 export default function App() {
-  const [numba, setnumba] = useState(null)
   const [message, setMessage] = useState('')
-
-  useEffect(async() => {
-    const five = await foo()
-    setnumba(five)
-  }, [])
 
   useEffect(async() => {
     const res = await axios.get('http://localhost:5000/api')
@@ -20,9 +15,8 @@ export default function App() {
   }, [])
 
   return (
-    <div>
-      <div>{numba}</div>
+    <StyledApp>
       <div>{message}</div>
-    </div>
+    </StyledApp>
   )
 }
