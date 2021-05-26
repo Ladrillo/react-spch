@@ -4,7 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm:backend\" \"npm:frontend\"",
     "frontend": "webpack serve --open",
-    "backend": "nodemon src/api.js",
+    "backend": "node src/api.js",
     "test": "jest --watch --verbose --forceExit"
   },
   "devDependencies": {
