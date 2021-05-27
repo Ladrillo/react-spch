@@ -7,7 +7,7 @@ api.use((req, res, next) => {
   next()
 })
 
-api.use('*', (req, res, next) => {
+api.use('*', (req, res) => {
   res.json({
     message: 'hello world!'
   })
