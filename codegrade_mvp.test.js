@@ -7,6 +7,6 @@ test('werkz', () => { })
 
 test('foo', async () => {
   render(<App />)
-  // await waitFor(() => screen.getByText('hello world!'))
-  // expect(screen.getByText('hello world!')).toHaveTextContent('hello world!')
+  await waitFor(() => screen.getByText('hello world!'))
+  expect(screen.getByText('hello world!')).toHaveTextContent('hello world!')
 }, 1000)
