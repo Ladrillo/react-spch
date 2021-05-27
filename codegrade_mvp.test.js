@@ -3,9 +3,18 @@ import React from 'react'
 import App from './src/components/App'
 import '@testing-library/jest-dom/extend-expect'
 
-test('werkz', () => { })
+afterEach(() => {
+  document.body.innerHTML = ''
+})
 
-test('foo', async () => {
+test('sanity', () => { })
+
+test('lady gaga', async () => {
+  render(<App />)
+  expect(screen.queryByText('lady gaga')).toBeInTheDocument()
+}, 1000)
+
+test('hello world', async () => {
   render(<App />)
   expect(await screen.findByText('hello world')).toBeInTheDocument()
 }, 1000)

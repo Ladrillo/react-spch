@@ -16,6 +16,7 @@ export default function App() {
 
   return (
     <StyledApp>
+      <div>lady gaga</div>
       <div>{message}</div>
     </StyledApp>
   )

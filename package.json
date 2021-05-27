@@ -5,7 +5,7 @@
     "start": "concurrently \"npm:backend\" \"npm:frontend\"",
     "frontend": "webpack serve --open",
     "backend": "node src/api.js",
-    "test": "jest --watch --verbose --forceExit"
+    "test": "jest --watch --verbose --forceExit --silent"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
