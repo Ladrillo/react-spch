@@ -10,16 +10,17 @@ export default function App() {
   const [message, setMessage] = useState('')
 
   useEffect(async() => {
-    const res = await fetch('http://localhost:5000/api/questions/7')
-    const data = await res.json()
-    setMessage(data)
+    const res = await axios.get('http://localhost:5000/api/questions/7')
+    setMessage(res.data)
   }, [])
 
   return (
     <StyledApp>
-      <div>lady gaga</div>
+      <h1>lady gaga</h1>
+      <h3>investigating Codegrade</h3>
+      This is the flow students are used to
       {/* <div>{JSON.stringify(message)}</div> */}
-      <div>{message.question_title}</div>
+      <h4>{message.question_title}</h4>
     </StyledApp>
   )
 }
