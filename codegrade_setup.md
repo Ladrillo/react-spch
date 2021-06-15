@@ -20,5 +20,5 @@ mv $FIXTURES/* . && npm install
 ## Auto Tests
 
 ```bash
-cg-jest run -- codegrade_mvp*.test.js --forceExit
+cg-jest run -- --forceExit
 ```
