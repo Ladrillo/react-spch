@@ -2,8 +2,13 @@
 
 ## Fixtures
 
+### Student-Facing
+
 - [codegrade_mvp.test.js](./codegrade_mvp.test.js)
-- [codegrade_mvp.test1.js](./codegrade_mvp.test.js)
+
+### Non-Student-Facing
+
+- [codegrade_mvp.test1.js](./codegrade_mvp1.test.js)
 
 ## Global setup script
 
