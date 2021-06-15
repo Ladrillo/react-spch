@@ -1,6 +1,6 @@
 # Codegrade Setup
 
-## Fixtures
+## 1- Fixtures
 
 ### Student-Facing
 
@@ -10,20 +10,24 @@
 
 - [codegrade_mvp.test1.js](./codegrade_mvp1.test.js)
 
-## Global setup script
+## 2- Global setup script
 
 ```bash
 cg-jest install
 ```
 
-## Per-student setup script
+## 3- Per-student setup script
 
 ```bash
 mv $FIXTURES/* . && npm install
 ```
 
-## Auto Tests
+## 4- Auto Tests
 
 ```bash
 cg-jest run -- --forceExit
 ```
+
+## 5- Rubric
+
+etc etc
