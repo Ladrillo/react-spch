@@ -3,6 +3,7 @@
 ## Fixtures
 
 - [codegrade_mvp.test.js](./codegrade_mvp.test.js)
+- [codegrade_mvp.test1.js](./codegrade_mvp.test.js)
 
 ## Global setup script
 
