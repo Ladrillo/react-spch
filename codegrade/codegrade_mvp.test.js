@@ -1,8 +1,11 @@
 import { render, fireEvent, screen } from '@testing-library/react'
-import { server } from './src/mocks/server'
+import { server } from '../src/mocks/server'
 import React from 'react'
-import App from './src/components/App'
+import App from '../src/components/App'
 import '@testing-library/jest-dom/extend-expect'
+import fetch from 'node-fetch'
+
+globalThis.fetch = fetch
 
 beforeAll(() => server.listen())
 afterAll(() => server.close())
@@ -20,5 +23,5 @@ test('lady gaga', async () => {
 
 test('hello world', async () => {
   render(<App />)
-  expect(await screen.findByText('hello world')).toBeInTheDocument()
+  expect(await screen.findByText('Bilbo\'s Pocket')).toBeInTheDocument()
 }, 500)

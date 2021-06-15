@@ -10,14 +10,16 @@ export default function App() {
   const [message, setMessage] = useState('')
 
   useEffect(async() => {
-    const res = await axios.get('http://localhost:5000/api')
-    setMessage(res.data.message)
+    const res = await fetch('http://localhost:5000/api/questions/7')
+    const data = await res.json()
+    setMessage(data)
   }, [])
 
   return (
     <StyledApp>
       <div>lady gaga</div>
-      <div>{message}</div>
+      {/* <div>{JSON.stringify(message)}</div> */}
+      <div>{message.question_title}</div>
     </StyledApp>
   )
 }
