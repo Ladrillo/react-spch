@@ -10,13 +10,13 @@
 
 - [codegrade_mvp.test1.js](./codegrade_mvp1.test.js)
 
-## 2- Global setup script
+## 2- Global Setup Script
 
 ```bash
 cg-jest install
 ```
 
-## 3- Per-student setup script
+## 3- Per-Student Setup Script
 
 ```bash
 mv $FIXTURES/* . && npm install
