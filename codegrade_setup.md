@@ -25,7 +25,7 @@ mv $FIXTURES/* . && npm install
 ## 4- Auto Tests
 
 ```bash
-cg-jest run -- --forceExit
+cg-jest run -- --runInBand --forceExit
 ```
 
 ## 5- Rubric
