@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    test: {
+    testing: {
       plugins: [
         '@babel/plugin-transform-runtime',
       ],
