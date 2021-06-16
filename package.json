@@ -1,11 +1,11 @@
 {
   "name": "client",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "fkill :5000 :3000 -s && concurrently \"npm:backend\" \"npm:frontend\"",
     "frontend": "webpack serve --open",
     "backend": "node src/mocks/api.js",
-    "test": "jest --watch --verbose --forceExit --silent"
+    "test": "jest --watchAll --verbose --forceExit --silent"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
